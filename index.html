@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cloud Tasks Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Cloud Tasks Dashboard</h1>
+    <p>GitHub Pages + Cloudflare Workers + Supabase</p>
+  </header>
+
+  <main>
+    <section class="panel">
+      <h2>Статистика</h2>
+      <div id="stats" class="stats">Завантаження...</div>
+    </section>
+
+    <section class="panel">
+      <div class="toolbar">
+        <h2>Завдання</h2>
+        <div class="controls">
+          <select id="categoryFilter">
+            <option value="all">Усі категорії</option>
+          </select>
+          <button id="refreshBtn">Оновити</button>
+        </div>
+      </div>
+      <p id="message"></p>
+      <div id="tasks" class="tasks"></div>
+    </section>
+  </main>
+
+  <footer>
+    Практична робота №6. Хмарні обчислення і хмарні платформи
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
